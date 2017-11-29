@@ -202,9 +202,6 @@ map <F12> :YcmCompleter GoToDefinition<CR>
 " Shift-F12:
 map <c-[>[24;2~ :YcmCompleter GoToDeclaration<CR>
 
-" Ctrl-K for bde-format (clang-format)
-map <C-k> :pyf /home/hrosen4/bin/bde-format.py<cr>
-
 " Tab in normal mode shifts lines around
 map  <Tab> >>
 map  <S-Tab> <<
