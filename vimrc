@@ -54,6 +54,7 @@ hi cConditional  ctermfg=green
 hi cInclude      ctermfg=green
 hi cIncluded     ctermfg=green
 hi cTodo         ctermfg=black ctermbg=green
+hi Search        ctermfg=black ctermbg=green
 
 set mouse=a
 set gcr=a:blinkon0
