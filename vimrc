@@ -40,6 +40,8 @@ let Tlist_Exit_OnlyWindow=1
 let Tlist_Compact_Format=1
 let g:Tlist_WinWidth=60
 let g:netrw_banner=0
+let g:netrw_list_hide='^00,\.a$,\.d$,\.o$,\.swp$,\.c$,^llcalc,^ported\.,captured_plink,^\.formated,\.tsk\*,\.dd$,\.mapfile$'
+let g:netrw_hide=1
 
 hi MatchParen cterm=bold ctermbg=none ctermfg=white
 hi TabLine cterm=none ctermbg=none ctermfg=DarkGreen
@@ -66,8 +68,10 @@ autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 set list listchars=tab:>-,trail:*
 
-map <C-K> :pyf ~/bin/bde-format.py<cr>
-map <C-K> <C-o>:pyf ~/bin/bde-format.py<cr>
+"map <C-K> :pyf ~/bin/bde-format.py<cr>
+"map <C-K> <C-o>:pyf ~/bin/bde-format.py<cr>
+
+map <F2> :FZF<CR>
 
 " switch between header/source with F4
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
